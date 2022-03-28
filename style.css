@@ -65,14 +65,24 @@ form input:focus {
 
 form button {
 	width: 100%;
-	padding: 0.2em;
-	border: none;
+	padding: 0.5em;
+	border: 5px solid #1d3557;
 	border-radius: 0.5em;
 	background-color: #e63946;
 	font-size: 1.2rem;
 	margin-bottom: 1em;
 	cursor: pointer;
 	color: #f1faee;
+	transition: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+form button:hover {
+	transform: scale(1.02);
+}
+
+form button:active {
+	transform: scale(0.95);
+	border: 5px solid transparent;
 }
 
 #weather {

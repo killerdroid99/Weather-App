@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+    <title>☁️☀️Weather App🌦️🌈</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="heading">Weather app</h1>
+
+        <form>
+            <label for="city">Enter city : </label>
+            <input type="search" id="city">
+            <button type="submit" id="submit">🔎 Search</button>
+        </form>
+
+        <div id="weather">
+            <span>
+                <img src="" alt="status" id="status">
+                <h1 id="temp">-/- °C</h1>
+                <div id="desc">????</div>
+            </span>
+            <span>
+                <div>
+                    <img src="./assets/low-temp.svg" alt="">
+                    <p id="min_temp">-/- °C</p>
+                </div>
+                <div>
+                    <img src="./assets/high-temp.svg" alt="">
+                    <p id="max_temp">-/- °C</p>
+                </div>
+            </span>
+            <span>
+                <img src="./assets/location.svg" alt="">
+                <h3 id="cityName">????</h3>
+            </span>
+            <span>
+                <p id="feels_like">Feels Like : -/- °C</p>
+                <p id="humidity">Humidity : -/- %</p>
+            </span>
+        </div>
+    </main>
+</body>
+
+</html>

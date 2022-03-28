@@ -13,7 +13,6 @@ const getWeather = async (apiKey, city) => {
 			`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 		);
 		let data = await res.json();
-		console.log(data);
 		currentTemp.textContent = `${data.main.temp} °C`;
 		cityName.innerText = `${data.name}, ${data.sys.country}`;
 		feelsLike.textContent = `Feels Like : ${data.main.feels_like} °C`;
